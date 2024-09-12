@@ -55,3 +55,17 @@ else
         TriggerClientEvent('Mic:ToggleBMic', source)
     end)
 end
+
+RegisterNetEvent('newsjob:server:DeliverNewspaperReward', function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    
+    if Player then
+        local payment = Config.PaymentPerPaper
+        Player.Functions.AddMoney('cash', payment, "Newspaper Delivery")
+        print(("[NEWSJOB]: Player %s delivered a newspaper and received $%d."):format(Player.PlayerData.citizenid, payment))
+    else
+        print("[NEWSJOB] Error: Player not found.")
+    end
+end)
+
