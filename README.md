@@ -1,5 +1,12 @@
 # qb-newsjob
+
 News Job For QB-Core
+
+Paper deliveries & QB Target is needed for this.
+
+Make sure you load qb-newsjob after qb-target 
+
+https://go.screenpal.com/watch/cZQlVwVRLy9 Video Preview 
 
 # License
 
