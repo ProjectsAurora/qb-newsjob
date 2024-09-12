@@ -2,6 +2,18 @@ Config = {}
 
 Config.UseableItems = true -- Set to false if you want to use commands instead of usable items
 
+
+Config.PaymentPerPaper = 10 -- Payment per newspaper delivered 
+
+Config.DeliveryPoints = {
+    {x = 893.2, y = -540.61, z = 58.51}, -- Residential house
+    {x = 862.61, y = -509.79, z = 57.33}, -- Residential house
+    {x = 844.81, y = -564.69, z = 57.71}, -- Residential house
+}
+
+Config.PickupPoint = {x = -590.93, y = -912.62, z = 23.88} -- Start and finish location 
+
+
 Config.Locations = {
     ["main"] = {
         label = "Weazle News HQ",
